@@ -5,7 +5,7 @@ const fetch = require('node-fetch')
 const withQuery = require('with-query').default
 
 // configure the PORT
-const PORT = parseInt(process.argv[2]) || parseInt(process.env.PORT) || 3000
+const PORT = parseInt(process.env.PORT)
 const API_KEY = process.env.API_KEY || "";
 const GIPHY_URL = 'https://api.giphy.com/v1/gifs/search'
 
